@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+  <title>文件脱敏工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="../assets/AppIcon.png" alt="">
+        <div><strong>文件脱敏工具</strong><span>Excel 隐私保护</span></div>
+      </div>
+      <nav aria-label="功能导航">
+        <button class="nav-item active" data-tab="desensitize"><span>◒</span>脱敏处理</button>
+        <button class="nav-item" data-tab="recover"><span>↻</span>数据恢复</button>
+      </nav>
+      <div class="privacy-note">本地处理 · 不上传网络<br>当前仅支持 .xlsx</div>
+    </aside>
+
+    <main>
+      <section id="desensitize" class="tab-panel active">
+        <header><div><p class="eyebrow">DESENSITIZE</p><h1>脱敏处理</h1><p>选择 Excel 文件，检查字段后生成脱敏副本与映射表。</p></div></header>
+        <div id="desensitize-upload" class="upload-card">
+          <div class="upload-icon">⇧</div><h2>选择 Excel 文件</h2><p>当前仅支持 .xlsx，单个文件最大 100MB</p>
+          <button id="pick-source" class="primary">选择文件</button>
+        </div>
+        <div id="analysis-panel" class="workspace hidden">
+          <div class="file-card"><div><span class="file-badge">XLSX</span><strong id="source-name"></strong></div><button id="change-source" class="text-button">更换文件</button></div>
+          <div class="toolbar"><label>工作表<select id="sheet-select"></select></label><div><button id="select-sensitive" class="secondary">仅选敏感字段</button><button id="toggle-all" class="secondary">全选</button></div></div>
+          <div class="field-table-wrap"><table><thead><tr><th class="check-column"></th><th>字段</th><th>识别类型</th><th>示例值</th></tr></thead><tbody id="field-body"></tbody></table></div>
+          <div class="action-row"><span id="selection-summary">已选择 0 个字段</span><button id="run-desensitize" class="primary">开始脱敏</button></div>
+        </div>
+        <div id="desensitize-result" class="result-card hidden"></div>
+      </section>
+
+      <section id="recover" class="tab-panel">
+        <header><div><p class="eyebrow">RECOVER</p><h1>数据恢复</h1><p>使用脱敏文件和对应映射表生成恢复副本。</p></div></header>
+        <div class="recover-grid">
+          <button id="pick-masked" class="file-picker"><span>①</span><strong>选择脱敏文件</strong><small id="masked-name">.xlsx</small></button>
+          <button id="pick-mapping" class="file-picker"><span>②</span><strong>选择映射表</strong><small id="mapping-name">_脱敏映射表.xlsx</small></button>
+        </div>
+        <div class="action-row recover-action"><span>两个文件必须来自同一次脱敏处理</span><button id="run-recover" class="primary" disabled>开始恢复</button></div>
+        <div id="recover-result" class="result-card hidden"></div>
+      </section>
+      <div id="toast" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

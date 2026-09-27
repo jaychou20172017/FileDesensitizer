@@ -1,0 +1,19 @@
+文件脱敏工具 1.0
+
+系统要求
+- Apple Silicon Mac（M1/M2/M3/M4 或更新芯片）
+- macOS 14 或更高版本
+- 当前仅支持 .xlsx Excel 文件
+
+安装方法
+1. 打开 DMG。
+2. 将 FileDesensitizer.app 拖到 Applications 文件夹。
+3. 从“应用程序”中启动 FileDesensitizer。
+
+当前测试包说明
+此安装包使用本地测试签名，尚未经过 Apple 公证。其他 Mac 首次启动时，
+请在 Finder 中右键 FileDesensitizer.app，选择“打开”，然后再次确认“打开”。
+
+如果仍被 macOS 阻止，请打开“系统设置 → 隐私与安全性”，在安全提示区域选择“仍要打开”。
+
+文件处理全程在本机完成，不会上传到网络。

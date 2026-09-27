@@ -1,0 +1,27 @@
+# macOS / Xcode user state
+.DS_Store
+**/.DS_Store
+**/xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+
+# Generated macOS runtime
+FileDesensitizer/FileDesensitizer/Resources/PythonRuntime/
+
+# Windows dependencies and build output
+Windows/node_modules/
+Windows/out/
+Windows/dist/
+
+# Distribution, generated samples and temporary work
+dist/
+outputs/
+.tmp/
+test_data.xlsx
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
