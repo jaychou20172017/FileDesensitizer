@@ -1,3 +1,5 @@
+[English](CLAUDE.en.md)
+
 # CLAUDE.md — 文件脱敏工具项目指引
 
 ## 项目概述

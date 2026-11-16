@@ -1,3 +1,5 @@
+[English](en/design-standards.md)
+
 # 设计规范 — 文件脱敏工具
 
 ## 整体风格

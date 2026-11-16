@@ -1,3 +1,5 @@
+[English](en/windows-manual-test-checklist.md)
+
 # Windows 版手动验收清单
 
 ## 测试材料

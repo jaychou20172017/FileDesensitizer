@@ -1,3 +1,5 @@
+中文 | [English](README.en.md)
+
 # 文件脱敏工具
 
 一个面向 macOS 与 Windows 的本地 Excel 文件脱敏应用。当前版本仅支持 `.xlsx`，可识别敏感字段、生成可逆脱敏文件和映射表，并使用映射表恢复原始内容。
@@ -76,3 +78,14 @@ npm run package:win
 脱敏映射表可以恢复原始数据。请将映射表与脱敏文件分开保存，并限制映射表的访问权限。
 
 当前分发包未配置 Apple Developer ID 公证或 Windows Authenticode 正式签名。面向外部用户正式发布前应完成相应平台的代码签名流程。
+
+
+## 许可 / License
+
+Copyright (c) 2026 Zhou Jie。非商业用途及企业内部使用免费；对外销售、收费服务、商业产品集成及商业托管等须事先取得书面授权。联系：[3504264104@qq.com](mailto:3504264104@qq.com)。
+
+Noncommercial and internal business use are free. External sales, paid services, commercial product integration and commercial hosting require prior written authorization from Zhou Jie.
+
+完整条款 / Full terms: [LICENSE](LICENSE). [English translation](LICENSE.en.md)（中文准据 / Chinese governs）. [商业授权 / Commercial licensing](COMMERCIAL-LICENSE.md).
+
+本许可仅覆盖权利人有权许可的项目内容，不改变第三方组件许可。新增许可不追溯撤销先前已合法取得的其他许可；历史发布包不会自动更新。This license does not replace third-party terms or revoke earlier lawfully granted rights; old release archives are not automatically updated.

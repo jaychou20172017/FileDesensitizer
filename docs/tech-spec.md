@@ -1,3 +1,5 @@
+[English](en/tech-spec.md)
+
 # 技术规格书 — 文件脱敏工具
 
 ## 运行环境

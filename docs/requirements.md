@@ -1,3 +1,5 @@
+[English](en/requirements.md)
+
 # 产品需求文档 — 文件脱敏工具 v1.0
 
 ## 项目概述

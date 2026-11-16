@@ -1,3 +1,5 @@
+[English](en/execution-steps.md)
+
 # 开发执行步骤 — 文件脱敏工具
 
 ## 开发原则
